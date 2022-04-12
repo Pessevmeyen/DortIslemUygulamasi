@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DortIslemUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İlk Sayıyı Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fVS-V9-ysQ">
+                                <rect key="frame" x="20" y="83" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="76w-yo-dh9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İkinci Sayıyı Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ur8-sB-Mtu">
+                                <rect key="frame" x="20" y="134" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="lVD-NY-Qkm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Q3-SG-KbJ">
+                                <rect key="frame" x="72" y="220" width="33" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                <connections>
+                                    <action selector="toplamaClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MUv-ju-DGJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPM-gY-cJT">
+                                <rect key="frame" x="148" y="220" width="31" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                <connections>
+                                    <action selector="cikarmaClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z4g-LI-p1L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijO-dU-3gX">
+                                <rect key="frame" x="223" y="220" width="31" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="*"/>
+                                <connections>
+                                    <action selector="carpmaClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t67-mS-aMl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18q-ug-y7l">
+                                <rect key="frame" x="312" y="220" width="29" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="/"/>
+                                <connections>
+                                    <action selector="bolmeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FjI-pX-bID"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sonuç: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmb-Gk-z5d">
+                                <rect key="frame" x="80" y="343" width="272" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kmb-Gk-z5d" secondAttribute="bottom" constant="447" id="15c-He-TRb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kmb-Gk-z5d" secondAttribute="trailing" constant="62" id="3So-BJ-YvX"/>
+                            <constraint firstItem="ijO-dU-3gX" firstAttribute="leading" secondItem="hPM-gY-cJT" secondAttribute="trailing" constant="44" id="F1E-r4-27Q"/>
+                            <constraint firstItem="fVS-V9-ysQ" firstAttribute="leading" secondItem="ur8-sB-Mtu" secondAttribute="leading" id="Gxy-Al-6K4"/>
+                            <constraint firstItem="fVS-V9-ysQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SpY-2O-JaF"/>
+                            <constraint firstItem="fVS-V9-ysQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="UT2-TW-gJs"/>
+                            <constraint firstItem="hPM-gY-cJT" firstAttribute="baseline" secondItem="8Q3-SG-KbJ" secondAttribute="firstBaseline" id="Up9-yj-mev"/>
+                            <constraint firstItem="8Q3-SG-KbJ" firstAttribute="baseline" secondItem="hPM-gY-cJT" secondAttribute="baseline" id="Vjt-Gs-m76"/>
+                            <constraint firstItem="fVS-V9-ysQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="XOE-zU-g6Q"/>
+                            <constraint firstItem="8Q3-SG-KbJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="Z7T-HR-YKW"/>
+                            <constraint firstItem="ur8-sB-Mtu" firstAttribute="top" secondItem="fVS-V9-ysQ" secondAttribute="bottom" constant="17" id="aVh-Ow-8gu"/>
+                            <constraint firstItem="kmb-Gk-z5d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="eKM-5E-Nev"/>
+                            <constraint firstItem="18q-ug-y7l" firstAttribute="leading" secondItem="ijO-dU-3gX" secondAttribute="trailing" constant="58" id="fwa-d8-kno"/>
+                            <constraint firstItem="fVS-V9-ysQ" firstAttribute="trailing" secondItem="ur8-sB-Mtu" secondAttribute="trailing" id="jNR-N3-qfz"/>
+                            <constraint firstItem="kmb-Gk-z5d" firstAttribute="top" secondItem="8Q3-SG-KbJ" secondAttribute="bottom" constant="92" id="rRG-f4-oNa"/>
+                            <constraint firstItem="hPM-gY-cJT" firstAttribute="baseline" secondItem="ijO-dU-3gX" secondAttribute="baseline" id="t0j-4b-E67"/>
+                            <constraint firstItem="8Q3-SG-KbJ" firstAttribute="top" secondItem="ur8-sB-Mtu" secondAttribute="bottom" constant="52" id="wmO-xe-Sqd"/>
+                            <constraint firstItem="ijO-dU-3gX" firstAttribute="baseline" secondItem="18q-ug-y7l" secondAttribute="baseline" id="x7h-m2-M8G"/>
+                            <constraint firstItem="hPM-gY-cJT" firstAttribute="leading" secondItem="8Q3-SG-KbJ" secondAttribute="trailing" constant="43" id="zbH-q9-7UJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ikinciText" destination="ur8-sB-Mtu" id="As2-Uy-XOA"/>
+                        <outlet property="ilkText" destination="fVS-V9-ysQ" id="y66-8o-y0s"/>
+                        <outlet property="sonucLabel" destination="kmb-Gk-z5d" id="KnP-Ax-z2U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
